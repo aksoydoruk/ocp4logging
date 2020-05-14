@@ -1,6 +1,9 @@
 # ocp4logging
+
 Needded YAML files for Openshift 4 Logging
+
 ###Install the Elasticsearch Operator using the CLI###
+
 1- Create the Namespace:
 oc create -f eo-namespace.yaml
 2-Create an Operator Group object:
@@ -13,7 +16,9 @@ oc project openshift-operators-redhat
 oc create -f eo-rbac.yaml
 6-Verify the Operator installation:
 oc get csv --all-namespaces
+
 ###Install the Cluster Logging Operator using the CLI###
+
 1-Create the Namespace:
 oc create -f clo-namespace.yaml
 2-Create the OperatorGroup object:
